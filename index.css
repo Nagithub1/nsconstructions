@@ -1,62 +1,117 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Set your desired background color */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Navigation */
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px; /* Set the width of the navigation bar as per your design */
-    height: 100vh; /* Set the height to cover the entire viewport height */
-    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Set your gradient colors */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #444;
 }
 
-ol {
+ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    padding: 1em 0;
 }
 
 li {
-    margin: 10px 0;
+    margin: 0 1em;
 }
 
 a {
     text-decoration: none;
-    color: #fff; /* Set the text color for the links */
-    font-size: 18px; /* Set the font size for the links */
+    color: #fff;
 }
 
-.nag {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Sections */
+section {
+    padding: 2em;
 }
 
-input {
-    padding: 5px;
-    margin-bottom: 10px;
+/* Home Section */
+#home {
+    background-color: #f2f2f2;
+}
+
+/* Services Section */
+#services {
+    background-color: #e0e0e0;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f2f2f2;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e0e0e0;
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    gap: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
 }
 
 button {
-    background-color: #fff; /* Set the button background color */
-    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
     border: none;
     cursor: pointer;
 }
 
-button a {
-    text-decoration: none;
-    color: #4e54c8; /* Set the text color for the button links */
-    font-weight: bold;
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        margin: 0.5em 0;
+    }
+
+    form {
+        width: 100%;
+    }
 }
